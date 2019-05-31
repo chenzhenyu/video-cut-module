@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VideoCutDemo</string>
+    <!--video cut-->
+    <string name="video_cut_edit_tips">反馈视频只支持15秒内的视频，需进行编辑</string>
+    <string name="video_cut_edit">编辑</string>
+    <string name="video_cut_cancel">取消</string>
+    <string name="video_cut_next">下一步</string>
+    <string name="video_cut_complete">完成</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/black">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:id="@+id/rl_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <VideoView
+                    android:id="@+id/vv_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/iv_first_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"/>
+
+        <ImageView
+                android:id="@+id/iv_video_play"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_video_play_1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+        <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="14dp"
+                android:paddingTop="10dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_back_white"/>
+
+    </RelativeLayout>
+
+    <com.nio.debug.sdk.ui.views.videocut.VideoCutBar
+            android:id="@+id/vcb_bar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"/>
+
+    <FrameLayout
+            android:id="@+id/fl_control"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/control_bar"/>
+
+</FrameLayout>

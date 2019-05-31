@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:apps="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_flame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            apps:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <View
+            android:id="@+id/v_shade_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/shade"/>
+
+    <View
+            android:id="@+id/v_shade_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/shade"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_limit_zone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            tools:visibility="visible">
+
+        <View
+                android:id="@+id/v_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_stroke_grey"/>
+
+        <ImageView
+                android:id="@+id/iv_indicator"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/shape_line_white"/>
+
+        <com.nio.debug.sdk.ui.views.videocut.CutSlide
+                android:id="@+id/cs_zone_start"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_slide_left"/>
+
+        <com.nio.debug.sdk.ui.views.videocut.CutSlide
+                android:id="@+id/cs_zone_end"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_slide_right"/>
+
+        <View
+                android:id="@+id/v_top_border"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white"/>
+
+        <View
+                android:id="@+id/v_bottom_border"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"/>
+    </RelativeLayout>
+</FrameLayout>

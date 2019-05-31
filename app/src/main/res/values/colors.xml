@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--半透明黑-->
+    <color name="shade">#99000000</color>
+    <color name="grey_alpha_30">#4DCDCED4</color>
+    <color name="blue_00BEBE">#00BEBE</color>
+    <color name="control_bar">#7F040B29</color>
+</resources>
