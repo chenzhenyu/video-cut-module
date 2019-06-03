@@ -4,4 +4,12 @@
 
 使用：VideoCutActivity.instance(activity: Activity, reqCode: Int, localVideoPath: String)
 
-样式：![WechatIMG131](./WechatIMG132.jpeg) ![WechatIMG132](./WechatIMG132.jpeg)
+
+
+样式：
+
+<img src='./WechatIMG132.jpeg' style="zoom:90"> 
+
+
+
+<img src='./WechatIMG131.jpeg' style="zoom:90">
